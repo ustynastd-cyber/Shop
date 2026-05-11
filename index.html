@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Maryna_Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-li"><a href="index.html">Додому</a></li>
+                <li class="nav-li"><a href="products.html">Продукти</a></li>
+                <li class="nav-li"><a href="about.html">Про нас</a></li>
+                <li class="nav-li"><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Ласкаво просимо до Maryna_Shop</h1>
+            <p>Ваш магазин для всіх потреб!</p>
+            <a href="products.html" class="btn">Купити зараз</a>
+        </section>
+
+        <section class="products">
+            <h2>Рекомендовані продукти</h2>
+            <div class="product-list">
+                <div class="product-card" data-product="product1">
+                    <img src="./images/product1.jpg" alt="Продукт 1">
+                    <h3>Продукт 1</h3>
+                    <p class="price">$19.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product1')">Купити зараз</a>
+                </div>
+                <div class="product-card" data-product="product2">
+                    <img src="./images/product2.jpg" alt="Продукт 2">
+                    <h3>Продукт 2</h3>
+                    <p class="price">$29.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product2')">Купити зараз</a>
+                </div>
+                <div class="product-card" data-product="product3">
+                    <img src="./images/product3.jpg" alt="Продукт 3">
+                    <h3>Продукт 3</h3>
+                    <p class="price">$39.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product3')">Купити зараз</a>
+                </div>
+                <div class="product-card" data-product="product4">
+                    <img src="./images/product4.jpg" alt="Продукт 4">
+                    <h3>Продукт 4</h3>
+                    <p class="price">$49.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product4')">Купити зараз</a>
+                </div>
+                <div class="product-card" data-product="product5">
+                    <img src="./images/product5.jpg" alt="Продукт 5">
+                    <h3>Продукт 5</h3>
+                    <p class="price">$59.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product5')">Купити зараз</a>
+                </div>
+                <div class="product-card" data-product="product6">
+                    <img src="./images/product6.jpg" alt="Продукт 6">
+                    <h3>Продукт 6</h3>
+                    <p class="price">$69.99</p>
+                    <a href="#" class="btn" onclick="showProductModal('product6')">Купити зараз</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-overlay" onclick="closeProductModal()"></div>
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProductModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalPrice" class="price"></p>
+            <button class="btn" onclick="closeProductModal()">Закрити</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Maryna_Shop</h3>
+                <p>Ваш надійний партнер у світі покупок. Якість та сервіс на першому місці.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <ul>
+                    <li><a href="index.html">Додому</a></li>
+                    <li><a href="products.html">Продукти</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Email: info@marynashop.com</p>
+                <p>Телефон: +380 96 386 91 90</p>
+                <p>Адреса: м. Київ, вул. Ентузіастів, 25</p>
+            </div>
+            <div class="footer-section">
+                <h3>Слідкуйте за нами</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">Facebook</a>
+                    <a href="#" class="social-link tiktok">TikTok</a>
+                    <a href="#" class="social-link instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maryna_Shop. Всі права захищені.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
